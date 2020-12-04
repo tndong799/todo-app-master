@@ -1,0 +1,130 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  line-height: 1.4;
+  font-weight: 400;
+  background-color: #fff;
+  position: relative;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.todo-app {
+  margin: 0 auto;
+  padding-left: 41rem;
+  padding-right: 41rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-wrapper{
+  margin-top: 11rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+.btn{
+  border: none;
+  outline: 0;
+  padding: 1.5rem 2rem;
+  background-color: transparent;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+}
+.btn-active{
+  border-bottom: 3px solid #2F80ED;
+}
+
+.todo-form{
+  margin-top: 1.8rem;
+  display: flex;
+  width: 100%;
+
+}
+.todo-input{
+  flex: 1;
+  margin-right: 2.5rem;
+  border-radius: 1.2rem;
+  border: 1px solid #BDBDBD;
+  outline: none;
+  padding-left: 1.7rem;
+  font-size: 1.6rem;
+}
+.btn-submit{
+  padding: 2rem 4rem;
+  color: #fff;
+  background-color: #2F80ED;
+  border-radius: 1.2rem;
+}
+
+.todo-list{
+  margin-top: 3.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.todo-item{
+  margin-bottom: 2.8rem;
+  display: flex;
+  align-items: center;
+}
+.todo-check{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.todo-name{
+  flex: 1;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-left: .7rem;
+}
+
+.todo-check:checked ~ .todo-name{
+  text-decoration: line-through;
+}
+
+.todo-delete{
+  font-size: 1.4rem;
+  color:  #EB5757;
+  cursor: pointer;
+}
+
+.btn-delete-all{
+  background-color: #EB5757;
+  color: #fff;
+  border-radius: .4rem;
+}
+.ml-50{
+  margin-left: 50rem;
+}
